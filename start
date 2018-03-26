@@ -1,0 +1,3 @@
+nodemon ./server.js localhost 3000
+
+nodemon --debug ./server.js 80
