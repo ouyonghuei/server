@@ -1,5 +1,15 @@
 extends layout
-
+script(type="text/javascript",src="https://cdn.bootcss.com/jquery/3.3.1/core.js")
 block content
   h1= title
   p Welcome to #{title}
+  div
+    input(placeholder="战锤" id="searchVal")
+    br
+    button(onClick="console.log('123')") 提交
+  -for( item of titleArr )
+    a(href="#{item.href}")=item.title+"---------"+item.time
+    br
+  
+  script(type="text/javascript").
+  alert("666")
